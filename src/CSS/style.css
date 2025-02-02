@@ -59,11 +59,11 @@
   border: 1px solid #00C22B;
 }
 
-.input-wraper {
+.input-wrapper {
   position: relative;
 }
 
-.input-wraper:has(.input.vermelho)::after {
+.input-wrapper:has(.input.vermelho)::after {
   content: "campo obrigatório";
   color: #F52E2E;
   font-size: 0.5rem;
