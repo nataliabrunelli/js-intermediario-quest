@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./reset.css");
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(rgb(223, 101, 152), rgb(100, 129, 229));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem;
+}
+
+.texto {
+  color: #fff;
+}
+
+.texto h1 {
+  text-transform: uppercase;
+}
+
+.texto p {
+  max-width: 45ch;
+}
+
+.form {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 32px;
+}
+
+.input::placeholder, .button {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 16px;
+}
+
+.input::placeholder {
+  color: #A8A8A8;
+}
+
+.input.vermelho {
+  border: 1px solid #F52E2E;
+}
+
+.input.verde {
+  border: 1px solid #00C22B;
+}
+
+.input-wraper {
+  position: relative;
+}
+
+.input-wraper:has(.input.vermelho)::after {
+  content: "campo obrigatório";
+  color: #F52E2E;
+  font-size: 0.5rem;
+  display: block;
+  position: absolute;
+  left: 16px;
+}
+
+.form p {
+  text-transform: lowercase;
+}
+
+.button {
+  color: #fff;
+  border-radius: 5px;
+  background-color: #3CCC87;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: inset -2px -2px 1px #00000056;
+  transform: scale(1.025);
+}
